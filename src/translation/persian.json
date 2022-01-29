@@ -10,17 +10,6 @@
 	"tags": ["سفارت", "ایران", "پاکستان"],
 	"pubDate": 1643473911451,
 	"source": "خبرپو",
-	"comments": [
-		{ "author": "http://www.google.com/image.jpg", "avatar": "image/jpeg", "date": "12345" },
-		{ "author": "http://www.google.com/image.jpg", "avatar": "image/jpeg", "date": "12345" },
-		{ "author": "http://www.google.com/image.jpg", "avatar": "image/jpeg", "date": "12345" }
-	],
-	"rating": {
-		"average": "4.5",
-		"count": "105"
-	},
-	"seen": 1542,
-	"share": "اشتراک گذاری",
 	"persian": "فارسی",
 	"english": "انگلیسی",
 	"home": "خانه",
@@ -28,9 +17,5 @@
 	"blog": "بلاگ",
 	"fa": "فارسی",
 	"en": "English",
-	"submit": "ارسال",
-	"message": "پیام",
-	"name": "نام خود را وارد کنید",
-	"lastName": "نام خانوادگی خود را وارد کنید",
 	"publish": "انتشار"
 }

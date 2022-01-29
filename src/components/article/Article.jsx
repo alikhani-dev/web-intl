@@ -1,12 +1,13 @@
 import { FormattedMessage, useIntl } from 'react-intl'
 import styled from 'styled-components'
+import { device } from '../../theme/variable'
 
 const Article = styled.article`
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: ${device.tablet}) {
 		flex-direction: column;
 	}
 `
@@ -28,7 +29,7 @@ const Content = styled.div`
 	text-align: justify;
 	flex-shrink: 2;
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: ${device.tablet}) {
 		margin-bottom: 1rem;
 	}
 `

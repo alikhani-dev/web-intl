@@ -2,6 +2,7 @@ import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 import { useLanguage } from '../../context/languageContext'
 import { useIntl } from 'react-intl'
+import { device } from '../../theme/variable'
 
 const Header = styled.header`
 	background-color: #eee;
@@ -12,7 +13,7 @@ const Header = styled.header`
 	align-items: center;
 	padding: 0 1.3rem;
 
-	@media screen and (max-width: 380px) {
+	@media screen and (max-width: ${device.mobileM}) {
 		padding: 0;
 	}
 `
@@ -36,7 +37,7 @@ const HeaderNavItem = styled.span`
 `
 
 const Select = styled.select`
-	@media screen and (max-width: 380px) {
+	@media screen and (max-width: ${device.mobileM}) {
 		margin: 0.5rem 1rem;
 	}
 `

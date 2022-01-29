@@ -1,6 +1,6 @@
 import { IntlProvider } from 'react-intl'
 import { useLanguage } from './context/languageContext'
-import { Header, Main, Footer } from './layout'
+import { Header, Main } from './layout'
 
 const App = () => {
 	const { language, message } = useLanguage()
@@ -9,7 +9,6 @@ const App = () => {
 		<IntlProvider locale={language} messages={message}>
 			<Header />
 			<Main />
-			<Footer />
 		</IntlProvider>
 	)
 }
