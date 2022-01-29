@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { IntlProvider } from 'react-intl'
+import { useLanguage } from './context/languageContext'
+import { Header, Main, Footer } from './layout'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	const { language, message } = useLanguage()
+
+	return (
+		<IntlProvider locale={language} messages={message}>
+			<Header />
+			<Main />
+			<Footer />
+		</IntlProvider>
+	)
 }
 
-export default App;
+export default App
